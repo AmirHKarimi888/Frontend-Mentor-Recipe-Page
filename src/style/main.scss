@@ -1,0 +1,319 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: YoungSerif;
+    src: url(../../assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url(../../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+/*colors*/
+$RoseWhite: hsl(330, 100%, 98%);
+$Eggshell: hsl(30, 54%, 90%);
+$LightGrey: hsl(30, 18%, 87%);
+$WengBrown: hsl(30, 10%, 34%);
+$DarkCharcoal: hsl(24, 5%, 18%);
+
+body {
+    background-color: $Eggshell;
+    font-family: Outfit;
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+}
+
+
+@media(max-width: 800px) {
+    .container {
+        width: 100%;
+        background-color: $RoseWhite;
+        box-shadow: 0px 0px 6px rgba(99, 99, 99, 0.2);
+        box-sizing: border-box;
+
+        .card-header {
+            .card-header-poster {
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .card-header-title {
+                padding: 0 2rem;
+                font-family: YoungSerif;
+                font-weight: normal;
+                margin-top: 2rem;
+                color: $DarkCharcoal;
+            }
+
+            .card-header-descr {
+                padding: 0 2rem;
+                margin-top: 1.5rem;
+            }
+        }
+
+        .card-body {
+            padding: 0 2rem;
+            
+            .card-body-prep-time {
+                box-sizing: border-box;
+                margin: 1.5rem auto;
+                width: 100%;
+                padding: 1.25rem;
+                background-color: hsl(30, 54%, 95%);
+                border-radius: 0.5rem;
+
+                .card-body-prep-time-title {
+                    color: hsl(332, 80%, 36%);
+                    font-weight: bold;
+                }
+
+                .card-body-prep-time-items {
+                    margin-left: 1.25rem;
+
+                    li {
+                        margin-top: .8rem;
+
+                        div {
+                            margin-left: 1rem;
+
+                            span {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .card-body-ingreds {
+                .card-body-ingreds-title {
+                    font-family: YoungSerif;
+                    color: hsl(32, 70%, 30%);
+                }
+
+                .card-body-ingreds-items {
+                    margin-left: 1.25rem;
+
+                    li {
+                        margin-top: .8rem;
+
+                        div {
+                            margin-left: 1rem;
+                        }
+                    }
+                }
+            }
+
+            .card-body-instructs {
+                border-top: 1px solid rgb(196, 188, 188);
+                border-bottom: 1px solid rgb(196, 188, 188);
+                margin-top: 1.5rem;
+                padding: 1.5rem 0;
+
+                .card-body-instructs-title {
+                    font-family: YoungSerif;
+                    color: hsl(32, 70%, 30%);
+                }
+
+                .card-body-instructs-items {
+                    margin-left: 1.25rem;
+
+                    li {
+                        margin-top: .8rem;
+
+                        div {
+                            margin-left: 1rem;
+
+                            span {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .card-body-nutr {
+                padding-top: 1.5rem;
+                box-sizing: border-box;
+
+                .card-body-nutr-title {
+                    font-family: YoungSerif;
+                    color: hsl(32, 70%, 30%);
+                }
+
+                .card-body-nutr-descr {
+                    margin: 1.25rem 0;
+                }
+
+                .card-body-nutr-table {
+                    width: 100%;
+                    border-collapse: collapse;
+
+                    td {
+                        border-bottom: 1px solid rgb(196, 188, 188);
+                        padding: 0.8rem 1.5rem;
+
+                        &.card-body-nutr-table-amount {
+                            color: hsl(32, 70%, 30%);
+                            font-weight: bold;
+                        }
+
+                        &.lastTableItem {
+                            border-bottom: 0rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 801px) {
+    .container {
+        margin: 4rem auto;
+        width: 50%;
+        background-color: $RoseWhite;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0px 0px 6px rgba(99, 99, 99, 0.2);
+        box-sizing: border-box;
+
+        .card-header {
+            .card-header-poster {
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+                border-radius: .5rem;
+            }
+
+            .card-header-title {
+                font-family: YoungSerif;
+                font-weight: normal;
+                margin-top: 1.5rem;
+                color: $DarkCharcoal;
+            }
+
+            .card-header-descr {
+                margin-top: 1.5rem;
+            }
+        }
+
+        .card-body {
+
+            .card-body-prep-time {
+                box-sizing: border-box;
+                margin: 1.5rem auto;
+                width: 100%;
+                padding: 1.25rem;
+                background-color: hsl(30, 54%, 95%);
+                border-radius: 0.5rem;
+
+                .card-body-prep-time-title {
+                    color: hsl(332, 80%, 36%);
+                    font-weight: bold;
+                }
+
+                .card-body-prep-time-items {
+                    margin-left: 1.25rem;
+
+                    li {
+                        margin-top: .8rem;
+
+                        div {
+                            margin-left: 1rem;
+
+                            span {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .card-body-ingreds {
+
+                .card-body-ingreds-title {
+                    font-family: YoungSerif;
+                    color: hsl(32, 70%, 30%);
+                }
+
+                .card-body-ingreds-items {
+                    margin-left: 1.25rem;
+
+                    li {
+                        margin-top: .8rem;
+
+                        div {
+                            margin-left: 1rem;
+                        }
+                    }
+                }
+            }
+
+            .card-body-instructs {
+                border-top: 1px solid rgb(196, 188, 188);
+                border-bottom: 1px solid rgb(196, 188, 188);
+                margin-top: 1.5rem;
+                padding: 1.5rem 0;
+
+                .card-body-instructs-title {
+                    font-family: YoungSerif;
+                    color: hsl(32, 70%, 30%);
+                }
+
+                .card-body-instructs-items {
+                    margin-left: 1.25rem;
+
+                    li {
+                        margin-top: .8rem;
+
+                        div {
+                            margin-left: 1rem;
+
+                            span {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .card-body-nutr {
+                padding-top: 1.5rem;
+                box-sizing: border-box;
+
+                .card-body-nutr-title {
+                    font-family: YoungSerif;
+                    color: hsl(32, 70%, 30%);
+                }
+
+                .card-body-nutr-descr {
+                    margin: 1.25rem 0;
+                }
+
+                .card-body-nutr-table {
+                    width: 100%;
+                    border-collapse: collapse;
+
+                    td {
+                        border-bottom: 1px solid rgb(196, 188, 188);
+                        padding: 0.8rem 1.5rem;
+
+                        &.card-body-nutr-table-amount {
+                            color: hsl(32, 70%, 30%);
+                            font-weight: bold;
+                        }
+
+                        &.lastTableItem {
+                            border-bottom: 0rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
